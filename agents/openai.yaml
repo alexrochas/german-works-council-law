@@ -1,0 +1,6 @@
+interface:
+  display_name: "WoCo"
+  short_description: "German works council law helper"
+  default_prompt: "Use $german-works-council-law to answer a German works council question with citations and a clear note that this is not a substitute for a lawyer."
+policy:
+  allow_implicit_invocation: false

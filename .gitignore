@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+
+# Reproducible downloads; keep generated markdown, ignore raw fetches.
+references/raw/
