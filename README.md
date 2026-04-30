@@ -138,13 +138,13 @@ Codex in this environment loads local skills from `~/.codex/skills/`.
 
 The recommended setup is:
 
-1. keep the repo in a normal development folder such as `~/Development/german-works-council-law`
+1. keep the repo in a normal development folder such as `~/[path_to_project]/german-works-council-law`
 2. symlink it into the Codex skills directory
 
 Example:
 
 ```bash
-ln -s ~/Development/german-works-council-law ~/.codex/skills/german-works-council-law
+ln -s ~/[path_to_project]/german-works-council-law ~/.codex/skills/german-works-council-law
 ```
 
 If the link already exists, replace or update it as needed.
@@ -157,7 +157,7 @@ In this environment, OpenCode appears to use a global rules file at `~/.opencode
 
 That means the clean approach is:
 
-1. keep this repo in `~/Development`
+1. keep this repo in `~/[path_to_project]`
 2. append or adapt an instruction snippet into `~/.opencode_rules`
 3. point the instructions at this repo’s files so the agent can use them as a local legal knowledge base
 
@@ -175,31 +175,6 @@ Important note:
 
 - this is a pragmatic local integration pattern based on the OpenCode setup present on this machine
 - it is not a claim about every OpenCode installation everywhere
-
-## Publishing This To GitHub
-
-Yes, this is a good candidate for a standalone GitHub repo.
-
-Recommended publishing posture:
-
-- publish as a dedicated `WoCo` skill repo
-- keep the legal-warning language prominent
-- keep generated Markdown sources versioned
-- keep raw downloads ignored
-- avoid marketing it as “legal advice”
-- describe it as an informational agent skill or legal-research helper
-
-Good repo positioning:
-
-- “German works council law skill for agents”
-- “Statute-grounded and citation-oriented”
-- “Informational only, not a substitute for a lawyer”
-
-## Suggested GitHub Description
-
-```text
-WoCo: a statute-grounded German works council law skill for agents. Informational only and not a substitute for a lawyer.
-```
 
 ## Maintenance Guidance
 
